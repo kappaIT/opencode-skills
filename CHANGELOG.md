@@ -5,6 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0](https://github.com/kappaIT/opencode-skills/compare/v1.0.0...v2.0.0) (2026-02-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* This plugin is deprecated. Skills functionality is now built into OpenCode natively.
+* Requires OpenCode SDK >= 0.15.18
+
+### Features
+
+* **config:** support ~/.config/opencode/skills as global skills directory ([93b7dcd](https://github.com/kappaIT/opencode-skills/commit/93b7dcd0e72db18d2adc2c70dc3b1ba5c1e8583c))
+* **config:** support ~/.config/opencode/skills as global skills directory ([ff37006](https://github.com/kappaIT/opencode-skills/commit/ff37006f8088067905a8a7d5277cf4331a469ce2))
+* implement Anthropic message insertion pattern with noReply ([#20](https://github.com/kappaIT/opencode-skills/issues/20)) ([d28fa84](https://github.com/kappaIT/opencode-skills/commit/d28fa845ab6e3386f46629bf473a938da1349803))
+
+
+### Bug Fixes
+
+* configure pre-1.0 versioning for patch releases only ([49a7016](https://github.com/kappaIT/opencode-skills/commit/49a7016f5699911dd69f6b48cd0cf20ea51df0f6))
+* correct version number in package.json to 0.0.1 ([de33a38](https://github.com/kappaIT/opencode-skills/commit/de33a38816813654fd1d37025a2e820fd0c6b9b7))
+* **hotfix:** remove exports from internal functions to match v0.1.1 ([e4db6bc](https://github.com/kappaIT/opencode-skills/commit/e4db6bc5e0ceccfd589f5bd9eea9e4f138287857))
+* **hotfix:** resolve ESM/CJS interop issue with fast-glob import ([ad377d3](https://github.com/kappaIT/opencode-skills/commit/ad377d38023ce7b5a81df7c3e5a36a844b0b249d))
+* **hotfix:** revert to Bun APIs, only add followSymlinks option ([ab8128f](https://github.com/kappaIT/opencode-skills/commit/ab8128f895ce705a8c7180e0a23e15fd18a24567))
+* only warn if no skills directories were found ([#17](https://github.com/kappaIT/opencode-skills/issues/17)) ([e5a43c0](https://github.com/kappaIT/opencode-skills/commit/e5a43c04288df533cc63901a7c4067eea904b0b9))
+* preserve agent context when loading skills and upgrade SDK to 1.0.126 ([b99b164](https://github.com/kappaIT/opencode-skills/commit/b99b164f82da99a1dab3e58e92417110bc86bd4f))
+* replace Bun-specific APIs with Node.js compatible alternatives ([a938c21](https://github.com/kappaIT/opencode-skills/commit/a938c2123f5f99185d3cf97c936828de17d80121))
+* restore Bun Glob, add tests and CI infrastructure ([#43](https://github.com/kappaIT/opencode-skills/issues/43)) ([bc935a9](https://github.com/kappaIT/opencode-skills/commit/bc935a9b65d0592ba401e5f0ec7963f5e83d33ec))
+* support symlinked skill directories ([#40](https://github.com/kappaIT/opencode-skills/issues/40)) ([85d8795](https://github.com/kappaIT/opencode-skills/commit/85d879588da5be64b357ace55ab73e9ddb6f36be))
+* update version number in package.json to 0.0.2 and refine README examples ([0a64400](https://github.com/kappaIT/opencode-skills/commit/0a64400b65cc2b7a1e99e7556612139592c3e1ea))
+
+
+### Documentation
+
+* deprecate plugin - skills now native in OpenCode v1.0.190+ ([#54](https://github.com/kappaIT/opencode-skills/issues/54)) ([fa75b67](https://github.com/kappaIT/opencode-skills/commit/fa75b671e1bc52f137aa208b7d099c41b0f45092))
+
 ## [1.0.0](https://github.com/malhashemi/opencode-skills/compare/v0.1.7...v1.0.0) (2025-12-23)
 
 
